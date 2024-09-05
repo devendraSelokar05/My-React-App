@@ -1,0 +1,25 @@
+.navbar-nav .nav-link {
+    position: relative;
+    color: #000; /* Default link color */
+    text-decoration: none; /* Remove default underline */
+    padding-bottom: 5px; 
+  }
+  
+  .navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0; /* Start the line from the middle */
+    bottom: 0;
+    width: 0;
+    height: 2px; /* Line thickness */
+    background-color: #007bff; /* Line color (blue in this case) */
+    transform: translateX(-50%); /* Adjust the starting point to center */
+    transition: width 0.4s ease; /* Animate width change */
+  }
+  
+  .navbar-nav .nav-link:hover::after {
+    width: 100%; /* Expand the line fully on hover */
+    left: 0; /* Move line to start from the first letter */
+    transform: translateX(0); /* Reset transform for smooth animation */
+  }
+  

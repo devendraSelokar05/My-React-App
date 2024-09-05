@@ -1,0 +1,50 @@
+.card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Expand the entire card */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow for better visibility */
+    z-index: 2;
+  }
+  
+  .card img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  .card:hover img {
+    transform: scale(1.2); /* Zoom the image */
+    filter: none; /* Clear blur effect on the hovered card image */
+  }
+  
+  .container {
+    position: relative;
+  }
+  
+  .tech-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .tech-icons .col-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .tech-icons img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .header-banner {
+    background-color: #d1ecff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
